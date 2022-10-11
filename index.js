@@ -5,9 +5,10 @@ const app = express();
 const path = require("path");
 
 app.use(cors({
-    origin: 'http://50.19.156.48:80',
+    origin: 'http://50.19.156.48',
     credentials: true
 }))
+
 
 var cookieParser = require('cookie-parser')
 app.use(cookieParser())
