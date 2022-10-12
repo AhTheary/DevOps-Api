@@ -5,7 +5,7 @@ const app = express();
 const path = require("path");
 
 app.use(cors({
-    origin: 'http://50.19.156.48',
+    origin: 'http://54.166.123.41',
     credentials: true
 }))
 
@@ -43,4 +43,4 @@ app.use((err, req, res, next) => {
 })
 
 
-app.listen(process.env.PORT || 3001, () => console.log('App avaiable on http://184.72.113.158:3001'))
+app.listen(process.env.PORT || 3001, () => console.log('App avaiable on http://3.80.198.109:3001'))
