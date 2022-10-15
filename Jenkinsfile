@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        registry = "theay003/devops"
+        registry = "theay003/backend-devops"
         registryCredential = 'dockerhub_id'
         dockerImage = ''
     }
