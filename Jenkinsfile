@@ -4,9 +4,10 @@ pipeline {
         registryCredential = 'dockerhub_id'
         dockerImage = ''
     }
-
     agent any
-
+    tools {
+    nodejs 'Nodejs'
+    }
     stages {
 
         stage('git clone backend') {
