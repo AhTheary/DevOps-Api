@@ -1,7 +1,7 @@
 # stage1 as builder
 FROM node:14-alpine as builder
 
-WORKDIR /app
+WORKDIR /backend
 
 # Copy the package.json and install dependencies
 COPY package*.json ./
