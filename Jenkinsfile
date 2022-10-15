@@ -9,7 +9,7 @@ pipeline {
 
     stages {
 
-        stage('git clone frontend') {
+        stage('git clone backend') {
             steps {
                 git 'https://github.com/AhTheary/DevOps-Api.git'
 
@@ -18,7 +18,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'cd /var/lib/jenkins/workspace/backend && npm install '
+                sh 'npm install'
             }
         }
 
