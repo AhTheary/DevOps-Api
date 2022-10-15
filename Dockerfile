@@ -24,4 +24,4 @@ COPY . .
 # COPY --from=builder /app/dist /usr/share/nginx/html
 
 EXPOSE 3001
-ENTRYPOINT ["nodemone", "index.js"]
+ENTRYPOINT ["nodemon", "index.js"]
